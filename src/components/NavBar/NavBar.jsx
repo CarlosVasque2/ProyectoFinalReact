@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom"
-import CartWidget from "../CartWidget/CartWidget"
+import { Link } from "react-router-dom";
+import CartWidget from "../CartWidget/CartWidget";
 import './NavBar.css';
 
 function NavBar() {
   return (
     <nav style={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
-        <h1>Tienda Ptfl</h1>
+        <Link to="/" style={{textDecoration: "none", color: "#ffffff", fontSize: "35px"}}>Tienda Ptfl</Link>
         <section>
             <Link to="/category/celular"> Celulares </Link>
             <Link to="/category/tablet"> Tablets </Link>
@@ -16,4 +16,11 @@ function NavBar() {
   )
 }
 
-export default NavBar
+export default NavBar;
+
+
+
+
+
+
+

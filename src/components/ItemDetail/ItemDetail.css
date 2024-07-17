@@ -1,52 +1,98 @@
-.item-detail {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-  
-  .item-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .item-details {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .item-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #333333;
-  }
-  
-  .item-price {
-    font-size: 1.25rem;
-    color: #007bff;
-    margin-bottom: 1rem;
-  }
-  
-  .item-description {
-    font-size: 1rem;
-    color: #666666;
-    margin-bottom: 1rem;
-  }
-  
-  .item-add-to-cart {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #007bff;
-    color: #ffffff;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .item-add-to-cart:hover {
-    background-color: #0056b3;
-  }
+.item-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.item-detail-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.item-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px; /* Ajustar según el diseño deseado */
+}
+
+.item-card img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.item-card .card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-card .card-text {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.item-card .card-text h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.item-card .card-body h2 {
+  margin-top: 20px;
+}
+
+.item-actions {
+  margin-top: 20px;
+}
+
+.item-actions button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-right: 10px; /* Espacio entre botones */
+}
+
+.item-actions button:hover {
+  background-color: #0056b3;
+}
+
+.item-actions a {
+  text-decoration: none;
+  color: white;
+  background-color: #28a745;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.item-actions a:hover {
+  background-color: #218838;
+}
+
+
   
