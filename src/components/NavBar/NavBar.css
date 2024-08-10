@@ -9,7 +9,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 nav h1 {
@@ -30,13 +30,31 @@ nav a {
 }
 
 nav a:hover {
-  color: #61dafb; 
+  color: #61dafb;
 }
 
 nav .cart-widget {
   display: flex;
   align-items: center;
 }
+
+.Option {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+  margin: 0 10px;
+}
+
+.ActiveOption {
+  color: #007bff; 
+  text-decoration: none; 
+  font-size: 1rem;
+  margin: 0 10px;
+}
+
+
+
 
 
 
